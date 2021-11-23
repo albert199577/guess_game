@@ -1,0 +1,96 @@
+* {
+  position: relative;
+  font-family: 微軟正黑體;
+  /* border: 1px solid #000; */
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc954;
+}
+
+#game_box {
+  display: inline-block;
+  background-color: #fff;
+  border: 4px solid #444;
+  width: 800px;
+  height: 350px;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 5px;
+  text-align: center;
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+  align-items: center;
+  height: 50px;
+  padding: 20px;
+  top: 3px;
+  position: relative;
+  margin: 0px;
+}
+
+.form {
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+}
+
+input {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 2px;
+  left: 35%;
+  top: 25px;
+}
+
+.enter {
+  height: 30px;
+  border-radius: 5px;
+  padding: 6px;
+  left: 40%;
+  top: 25px;
+  cursor: pointer;
+}
+
+.resultParas {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.guesses {
+  width: 30%;
+  height: 50px;
+  font-size: 15px;
+  text-align: center;
+  vertical-align: text-bottom;
+}
+
+.lastResult {
+  width: 30%;
+  height: 50px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.lowOrHi {
+  width: 30%;
+  height: 50px;
+  font-size: 15px;
+  text-align: center;
+}
