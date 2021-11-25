@@ -7,7 +7,7 @@ const lowOrHi = document.querySelector('.lowOrHi')
 const enter = document.querySelector('.enter')
 const number_box = document.querySelector('.number_box')
 
-let guessCount = 1
+let guessCount = 1;
 let resetButton
 
 function checkGuess() {
