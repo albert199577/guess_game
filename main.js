@@ -36,6 +36,8 @@ main.addEventListener("submit", e => {
         } else if (user_num > confirm_num) {
             n2 = user_num;
         }
+        guess_num.setAttribute("min", n1);
+        guess_num.setAttribute("max", n2);
         range.textContent = "Please Guess Number " + n1 + " - " + n2;
         
     }
