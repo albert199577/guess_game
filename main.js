@@ -58,7 +58,7 @@ function gameOver() {
     resetButton.innerText = "Start new game";
     let container = document.querySelector("main .result");
     container.appendChild(resetButton);
-    resetButton.addEventListener("click", resetGame)
+    resetButton.addEventListener("click", resetGame);
 }
 
 
@@ -76,6 +76,8 @@ function resetGame() {
     console.log(confirm_num);
     n1 = 1;
     n2 = 100;
+    guess_num.setAttribute("min", n1);
+    guess_num.setAttribute("max", n2);
 }
 
 
