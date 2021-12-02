@@ -10,16 +10,29 @@ html, body
     justify-content: center
     align-items: center
 main 
-    width: 80vw
-    height: 40vw
+    max-width: 50vw
+    height: 60%
     border: 3px solid #000
     border-radius: 2rem
     text-align: center
+    display: inline-block
+
+    @media(max-width: 800px)
+        h1
+            font-size: 1.5rem
+    p 
+        margin: 1rem 1rem
+        padding: 0 2rem
     form
-        height: 30%
+        height: 20%
         display: flex
         align-items: center
         justify-content: center
+        @media(max-width: 800px) 
+            height: 10%
         input
             width: 10rem
-            
+    .result 
+        display: grid
+        grid-template-rows: repeat(4, 1fr)
+        display: inline-block
