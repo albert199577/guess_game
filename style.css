@@ -19,23 +19,32 @@ html, body {
 }
 
 main {
-  max-width: 50vw;
-  height: 60%;
+  max-width: 1300px;
+  max-height: 1000px;
+  min-height: 80%;
   border: 3px solid #000;
   border-radius: 2rem;
   text-align: center;
-  display: inline-block;
+  display: -ms-grid;
+  display: grid;
+  margin: 0 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 800px) {
   main h1 {
     font-size: 1.5rem;
   }
+  main main {
+    height: 80%;
+  }
 }
 
-main p {
-  margin: 1rem 1rem;
-  padding: 0 2rem;
+main .rule {
+  margin: 0 2rem;
+  padding: 2rem;
 }
 
 main form {
@@ -64,8 +73,13 @@ main form input {
 main .result {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
-  display: inline-block;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+}
+
+@media (max-width: 800px) {
+  main .result p {
+    font-size: .8rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
